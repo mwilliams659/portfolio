@@ -1,10 +1,13 @@
 
+body {
+  overflow:hidden;
+}
+
+
 /* Create a sticky/fixed navbar */
 #navbar {
   overflow: hidden;
   background-color: #18c7a7;
-  padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
-  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
   width: 100%;
   top: 0; /* At the top */
@@ -139,8 +142,8 @@ html {
     background-color: #18c7a7; 
     background-size: cover;
     width: 100%;
-    height: 600px;
-    position: relative;
+    height: 100%;
+    position: absolute;
     margin: 0;
     /* position should be on relative not absolute (but whitespace on side???) */
     z-index: -10;
