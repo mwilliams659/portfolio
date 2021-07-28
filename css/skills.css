@@ -1,77 +1,103 @@
+
 body {
-    overflow:hidden;
-  }
-  
-  
-  /* Create a sticky/fixed navbar */
+  overflow:hidden;
+  user-select: none;
+}
+
+
+/* Create a sticky/fixed navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #18c7a7;
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 9999;
+  font-family: 'Signika', sans-serif;
+}
+
+/* Style the navbar links */
+#tabs, #myName {
+    float: right;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+
+#myName {
+    left: 0%;
+    float: left;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+  color: rgb(126, 66, 106);
+}
+
+
+/* Style the active/current link */
+a.active{
+  color: #ffdf29e7;
+}
+
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
   #navbar {
-    overflow: hidden;
-    background-color: #18c7a7;
-    position: fixed; /* Sticky/fixed navbar */
-    width: 100%;
-    top: 0; /* At the top */
-    z-index: 9999;
-    font-family: 'Signika', sans-serif;
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+svg {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 999;
+}
+
+
+
+a {
+  margin: 15px;
+}
+
+a:hover {
+  filter: brightness(0.6);
+}
+
+.grow {
+    transition: all .2s ease-in-out;
   }
   
-  /* Style the navbar links */
-  #tabs, #myName {
-      float: right;
-      color: rgb(253, 253, 253);
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 25px;
-      line-height: 25px;
-      border-radius: 4px;
-      text-transform: uppercase;
-      margin-right: 40px;
-  }
-  
-  
-  #myName {
-      left: 0%;
-      float: left;
-      font-size: 25px;
-      text-transform: uppercase;
-  }
-  
-  /* Links on mouse-over */
-  #navbar a:hover {
-    color: rgb(126, 66, 106);
-  }
-  
-  
-  /* Style the active/current link */
-  a.active{
-    color: #ffdf29e7;
-  }
-  
-  
-  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
-  @media screen and (max-width: 580px) {
-    #navbar {
-      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-    }
-    #navbar a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    #navbar-right {
-      float: none;
-    }
+.grow:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
 
+/* Projects */
 
+.row {
+    position: absolute;
+}
 
-
-
-
-
-
-  
-/* ---- particles.js container ---- */ 
+/* ---- particles.js  ---- */ 
 html {
     height: 100%
 }

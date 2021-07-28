@@ -1,6 +1,10 @@
 
 body {
   overflow:hidden;
+  user-select: none;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
 }
 
 
@@ -51,17 +55,16 @@ a.active{
 
 /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 580px) {
-  #navbar {
-    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-  }
   #navbar a {
     float: none;
     display: block;
     text-align: left;
+    font-size: 30px;
   }
   #navbar-right {
     float: none;
   }
+
 }
 
 /* Bitmoji logo */
@@ -81,9 +84,10 @@ img {
     color: #FFF;
     font-family: 'Signika', sans-serif;
     /* font-weight: 200; */
-    text-shadow: 2px 2px #5F6D72;
+    /* text-shadow: 2px 2px #5F6D72; */
     text-transform: uppercase;
     z-index: 999;
+    
 }
 
 /* CV Button */
@@ -103,6 +107,14 @@ img {
 
   }
 
+a {
+  margin: 15px;
+}
+
+a:hover {
+  filter: brightness(0.6);
+}
+
 .grow {
     transition: all .2s ease-in-out;
   }
@@ -118,7 +130,7 @@ img {
     position: absolute;
 }
 
-/* ---- particles.js container ---- */ 
+/* ---- particles.js  ---- */ 
 html {
     height: 100%
 }
@@ -152,4 +164,5 @@ html {
     right: 0;
     bottom: 0;
 }
+
 

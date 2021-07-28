@@ -20,10 +20,29 @@
     <div id="navbar">
         <a href="contact.html" id="tabs">Contact Me</a>
         <a href="about.html" id="tabs">About</a>
-        <a href="skills.html" id="tabs">Skills</a>
+        <!-- <a href="skills.html" id="tabs">Skills</a> -->
         <a class="active" href="projects.html" id="tabs">Projects</a>
         <a href="homepage.html" id="myName">Madeleine Williams</a>
     </div>
+    <div>
+    <!-- Projects -->
+        <div class="flex-container" id="first-project">
+            <div class="child">
+                <a><img class="image grow" id="photo1" src="./images/plant-shop.jpg" alt="Plant-Shop" title="Visit Plant Shop Application"></a><div class="text-box" style="float: right;">                              A full-stack e-commerce application that displays the plant stock from a plant shop from the database via a Python REST API. Front end is a dynamic user-interface using HTML/CSS and JavaScript scripting. In the back end I have a Python REST API running with Flask and a SQLite database. I have used the HTTP protocol to link up my front end to my backend. I had a number of routes set up which linked to functions which, with use of SQLAlchemy, would put together SQL statements to get or update tables in my database.  The responses from my HTTP requests returned to provide a visual representation of available stock and the ability to add to or remove plants from a functional basket. To test my REST API, I manually tested HTTP routes using Postman and later replaced it with a fully automated test suite using the Pytest framework and a test database that was used as a mock. I wrote functional unit-tests with Pytest to check every function worked as expected. This resulted in a fully-tested and operational backend that allowed communication between the REST API and the database.</div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="child">
+                <a href="https://main.d1i69j0ydudm91.amplifyapp.com/"><img class="image grow" id="photo2" src="./images/game.jpg" alt="Game" title="Visit Noughts & Crosses Application"></a><div class="text-box" style="float: right;">This is my plant shop.</div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="child">
+                <a href="https://master.d1o1a854wihqyi.amplifyapp.com/"><img class="image grow" id="photo3" src="./images/clock.jpg" alt="Clock" title="Visit Clock Alarm Application"></a><div class="text-box" style="float: right;">This is my plant shop. Words words</div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
